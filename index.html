@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icono.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Yeon+Sung&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <title>CV Juan Jose Cochia</title>
+</head>
+<body style="margin: 0px;">
+    
+    <!--
+    Barra superior
+    La barra superior se mantiene fija con el titulo de la pantalla, un menu para desplazarse por las distintas páginas
+    y una foto del CV del candidato
+    -->
+    <header>
+        <button id="Menu">
+            <span id="Icono"></span>
+        </button>
+        <h1 id="titulo">CV: Juan Jose Cochia</h1>
+        <img src="fotocv.jpg" alt="Foto perfil CV" id="foto" />
+    </header>
+
+    <!--
+    Botonera lateral
+    La botonera (menu) ocupa toda la pantalla con los botones para navegar por las distintas páginas    
+    -->
+    <nav id="botonera" >
+        <button id="inicio">Inicio</button><br>
+        <button id="formacion">Formación académica</button><br>
+        <button id="habilidades">Habilidades</button><br>
+        <button id="experiencia">Experiencia Laboral</button><br>
+        <button id="idiomas">Idiomas</button><br>
+        <button id="contacto">Contacto</button>    
+    </nav>
+
+    <!--
+    Frame de carga de las paginas
+    Las páginas se cargan en un iframe para mantener tanto el header como el pie de página durante todo el recorrido    
+    -->
+    <iframe id="principal" type="text/html" src="inicio.html" frameborder="0"></iframe>
+   
+    <!--Pie de pagina-->
+    <footer>
+        <div class="pie" id="izq">Primeros pasos del desarrollo frontend - Proyecto Final </div>
+        <div class="pie" id="der">©2023</div>
+    </footer>
+
+    <script src="js/funciones.js"></script>
+</body>
+</html>
